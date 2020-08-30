@@ -1,4 +1,5 @@
 .container {
+  background-color: #373d3f;
   min-height: 100vh;
   padding: 0 0.5rem;
   display: flex;
@@ -8,5 +9,6 @@
 }
 
 .main {
+  color: #fff;
   font-size: 5rem;
 }
