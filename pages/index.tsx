@@ -44,7 +44,7 @@ const Soon = () => {
         initial="hidden"
         animate="visible"
         variants={variants}
-        className="w-screen text-white text-center text-3xl lg:text-6xl tracking-wider antialiased"
+        className="w-screen text-white text-center text-3xl md:text-5xl lg:text-6xl tracking-wider antialiased"
       >
         ON-GOING CONSTRUCTION
       </motion.div>
@@ -62,7 +62,7 @@ const Soon = () => {
           >
             <motion.img
               whileHover={{ scale: 1.2 }}
-              className="h-auto w-8 md:w-12"
+              className="h-auto w-8 lg:w-12"
               src={link.icon}
             />
           </a>
