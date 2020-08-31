@@ -1,16 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 400;
+  src: url("../public/fonts/Montserrat-Light.otf");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 600;
+  src: url("../public/fonts/Montserrat-SemiBold.otf");
+}
+
+@font-face {
+  font-family: "PlayFairDisplay";
+  font-weight: 900;
+  src: url("../public/fonts/PlayfairDisplay-Black.ttf");
+}
+
 html,
 body {
-  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
 }
