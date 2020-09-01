@@ -1,8 +1,5 @@
 import Head from "next/head";
 import { motion } from "framer-motion";
-import LinkedInLightIco from 'assets/icons/linkedin-light.svg';
-import MailLightIco from 'assets/icons/mail-light.svg';
-import InstagramLightIco from 'assets/icons/instagram-light.svg';
 
 const Soon = () => {
   const variants = {
@@ -20,15 +17,15 @@ const Soon = () => {
   const links = [
     {
       href: "https://www.linkedin.com/in/nicole-balaaldia-937254168/?originalSubdomain=ph",
-      icon: LinkedInLightIco
+      icon: '/icons/linkedin-light.svg'
     },
     {
       href: "mailto:balaaldianicole@gmail.com",
-      icon: MailLightIco
+      icon: '/icons/mail-light.svg'
     },
     {
       href: "https://www.instagram.com/nicnicsss/",
-      icon: InstagramLightIco
+      icon: 'icons/instagram-light.svg'
     },
   ]
 
