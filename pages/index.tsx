@@ -1,5 +1,4 @@
 import Head from "next/head";
-import styled from 'styled-components';
 import { motion } from "framer-motion";
 import LinkedInLightIco from 'assets/icons/linkedin-light.svg';
 import MailLightIco from 'assets/icons/mail-light.svg';
@@ -34,7 +33,7 @@ const Soon = () => {
   ]
 
   return (
-    <div className="h-screen bg-black flex flex-col	justify-center items-center">
+    <div className="h-screen flex flex-col justify-center items-center">
       <Head>
         <title>Nicole Balaaldia</title>
         <link rel="icon" href="/favicon.ico" />

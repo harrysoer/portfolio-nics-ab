@@ -19,6 +19,9 @@ module.exports = {
   future: {
     removeDeprecatedGapUtilities: true,
   },
-  variants: {},
+  variants: {
+    textColor: ["responsive", "hover", "focus", "active"],
+    margin: ["responsive", "even"],
+  },
   plugins: [],
 };
