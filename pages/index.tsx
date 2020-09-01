@@ -52,6 +52,7 @@ const Soon = () => {
       >
         {links.map(link =>
           <a
+            key={link.href}
             className="mx-6"
             target="__blank"
             href={link.href}
