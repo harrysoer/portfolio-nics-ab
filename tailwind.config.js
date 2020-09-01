@@ -14,6 +14,9 @@ module.exports = {
         sans: ["Montserrat"],
         serif: ["PlayFairDisplay"],
       },
+      transitionDuration: {
+        800: "800ms",
+      },
     },
   },
   future: {

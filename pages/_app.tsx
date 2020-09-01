@@ -14,8 +14,8 @@ const MyApp = ({ Component, pageProps }) => {
       className={cn([
         'min-h-screen',
         'transition-colors',
-        'duration-1000',
-        'ease-in',
+        'duration-800',
+        'ease-in-out',
         bgColor,
         textColor
       ])}
