@@ -15,10 +15,10 @@ const Header = ({ isDarkBg }: Props) => {
   ]
 
   return (
-    <div className={`${textColor} px-10 h-24 flex justify-end items-center`}>
+    <div className={`${textColor} px-24 h-32 flex justify-end items-center`}>
       {
         links.map(link =>
-          <div key={link.href} className='even:mx-10 text-lg'>
+          <div key={link.href} className='lg:even:mx-20 text-lg'>
             <Link href={link.href}>
               <a>
                 {link.title}
