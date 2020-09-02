@@ -2,7 +2,14 @@ module.exports = {
   purge: ["./components/**/*.{js,ts,jsx,tsx}", "./pages/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      stroke: {
+        black: "#1b1c1d;",
+        white: "#fff",
+      },
       colors: {
+        black: "#1b1c1d;",
+      },
+      background: {
         black: "#1b1c1d;",
       },
       fontSize: {
