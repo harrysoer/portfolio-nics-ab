@@ -24,7 +24,7 @@ const Soon = () => {
       icon: '/icons/mail-light.svg'
     },
     {
-      href: "https://www.instagram.com/nicnicsss/",
+      href: "https://www.instagram.com/nics_ab/",
       icon: 'icons/instagram-light.svg'
     },
   ]
