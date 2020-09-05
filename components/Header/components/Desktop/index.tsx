@@ -21,7 +21,7 @@ const Desktop = ({ isDarkBg }: Props) => {
         'items-center',
         textColor
       ])}
-      variants={variantLgContainer}
+      variants={lgContainerVariants}
       initial="hidden"
       animate="show"
     >
@@ -30,7 +30,7 @@ const Desktop = ({ isDarkBg }: Props) => {
           <motion.div
             key={nav.href}
             className='cursor-pointer even:mx-10 lg:even:mx-20 text-lg'
-            variants={variantLgNavs}
+            variants={lgNavsVariant}
             whileHover={{ scale: 1.2 }}
           >
             <Link href={nav.href}>

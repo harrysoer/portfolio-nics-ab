@@ -60,7 +60,7 @@ const Mobile = ({ isDarkBg }: Props) => {
       </button>
 
       <motion.div
-        variants={navListVariant}
+        variants={navListVariants}
         className={cn([
           'transition-colors',
           'duration-800',
@@ -82,7 +82,7 @@ const Mobile = ({ isDarkBg }: Props) => {
           <motion.div
             className="my-5"
             key={nav.href}
-            variants={navVariant}
+            variants={navVariants}
             whileHover={{ scale: 1.5 }}
           >
             <Link href={nav.href}>
