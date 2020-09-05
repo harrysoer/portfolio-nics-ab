@@ -9,7 +9,7 @@ const MyApp = ({ Component, pageProps }) => {
   const isDarkBg = [links.home, links.soon].includes(router.pathname);
   const bgColor = isDarkBg ? 'bg-black' : 'bg-white';
   const textColor = isDarkBg ? 'text-white' : 'text-black';
-  console.log({ isDarkBg })
+
   return (
     <div
       className={cn([

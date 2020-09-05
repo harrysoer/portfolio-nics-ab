@@ -51,7 +51,7 @@ const variantLgContainer = {
   show: {
     opacity: 1,
     transition: {
-      staggerChildren: 0.7
+      staggerChildren: 0.45
     }
   }
 }
