@@ -46,7 +46,7 @@ const Desktop = ({ isDarkBg }: Props) => {
 export default Desktop
 
 /* ===/ Variants /=== */
-const variantLgContainer = {
+const lgContainerVariants = {
   hidden: {},
   show: {
     transition: {
@@ -55,7 +55,7 @@ const variantLgContainer = {
   }
 }
 
-const variantLgNavs = {
+const lgNavsVariant = {
   hidden: {
     y: -10,
     opacity: 0,

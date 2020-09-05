@@ -108,14 +108,14 @@ const Bar = props => (
 );
 
 /* ===/ Variants /=== */
-const navListVariant = {
+const navListVariants = {
   closed: {
     scale: 0,
     opacity: 0,
     transition: {
       duration: 0.3,
       staggerChildren: 0.07,
-      delayChildren: 0.2
+      // delayChildren: 0.2
     }
   },
   open: {
@@ -129,7 +129,7 @@ const navListVariant = {
   }
 }
 
-const navVariant = {
+const navVariants = {
   closed: {
     x: 50,
     opacity: 0,
