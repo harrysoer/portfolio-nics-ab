@@ -47,9 +47,8 @@ export default Desktop
 
 /* ===/ Variants /=== */
 const variantLgContainer = {
-  hidden: { opacity: 0 },
+  hidden: {},
   show: {
-    opacity: 1,
     transition: {
       staggerChildren: 0.45
     }
