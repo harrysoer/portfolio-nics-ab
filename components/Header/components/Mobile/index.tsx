@@ -130,6 +130,13 @@ const navListVariant = {
 }
 
 const navVariant = {
+  closed: {
+    x: 50,
+    opacity: 0,
+    transition: {
+      x: { stiffness: 1000 }
+    }
+  },
   open: {
     x: 0,
     opacity: 1,
@@ -137,11 +144,4 @@ const navVariant = {
       x: { stiffness: 1000, velocity: -100 }
     }
   },
-  closed: {
-    x: 50,
-    opacity: 0,
-    transition: {
-      x: { stiffness: 1000 }
-    }
-  }
 }
