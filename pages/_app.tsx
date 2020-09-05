@@ -13,6 +13,8 @@ const MyApp = ({ Component, pageProps }) => {
   return (
     <div
       className={cn([
+        'flex',
+        'flex-col',
         'min-h-screen',
         'transition-colors',
         'duration-800',
