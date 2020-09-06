@@ -1,13 +1,25 @@
 import { motion } from "framer-motion";
+import cn from "classnames";
 
-const home = () => {
+type Props = {
+  isDarkBg: boolean
+}
+
+const home = ({ isDarkBg }: Props) => {
+  const rulerBgColor = isDarkBg ? "bg-white" : "bg-black"
+
   return (
-    <motion.div initial="hiddent" animate="show" variants={containerVariants} className="mt-64 mb-10 px-5 md:px-8 lg:px-32">
+    <motion.div
+      initial="hiddent"
+      animate="show"
+      variants={containerVariants}
+      className="flex flex-col mt-auto mb-70 px-5 md:px-8 lg:px-32"
+    >
       <motion.div
         initial="hidden"
         animate="show"
         variants={nameVariants}
-        className="flex flex-wrap font-serif text-5xl leading-none md:text-7xl lg:text-8xl"
+        className="self-start flex flex-wrap font-serif text-5xl leading-none md:text-7xl lg:text-8xl"
       >
         <motion.span
           initial="hidden"
@@ -28,8 +40,14 @@ const home = () => {
       <motion.div
         initial="hidden"
         animate="show"
+        variants={dividerVariants}
+        className={cn(["h-1", "my-2", rulerBgColor, 'bg-gray-400'])}
+      />
+      <motion.div
+        initial="hidden"
+        animate="show"
         variants={titleVariants}
-        className="flex flex-wrap mt-2 text-2xl leading-tight md:text-4xl lg:text-4xl"
+        className="flex flex-wrap  text-2xl leading-tight md:text-4xl lg:text-4xl"
       >
         Architectural Designer
       </motion.div>
@@ -88,6 +106,20 @@ const lastNameVariants = {
       duration: 1.5
     }
   }
+}
+
+const dividerVariants = {
+  hidden: {
+    width: "0%",
+    opacity: 0,
+  },
+  show: {
+    width: "35%",
+    opacity: 1,
+    transition: {
+      duration: 1.5
+    }
+  },
 }
 
 const titleVariants = {

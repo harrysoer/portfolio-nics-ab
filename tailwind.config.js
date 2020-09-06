@@ -24,6 +24,9 @@ module.exports = {
       transitionDuration: {
         800: "800ms",
       },
+      spacing: {
+        70: "22rem",
+      },
     },
   },
   future: {

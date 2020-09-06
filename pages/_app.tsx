@@ -27,7 +27,7 @@ const MyApp = ({ Component, pageProps }) => {
         ? <Header isDarkBg={isDarkBg} />
         : null
       }
-      <Component {...pageProps} />
+      <Component {...pageProps} isDarkBg={isDarkBg} />
     </div >
   )
 }
