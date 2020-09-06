@@ -1,8 +1,14 @@
+import { GetStaticProps } from "next";
+
+import ReactMarkdown from 'react-markdown';
 import Head from "next/head";
 import PageTitle from "components/PageTitle";
 import ContentLayout from "components/ContentLayout";
+import graphcms from "graphql/graphCmsClient";
 
-const about = () => {
+
+const About = ({ about }) => {
+  const { content = '' } = about
 
   return (
     <>
@@ -12,9 +18,23 @@ const about = () => {
       </Head>
       <ContentLayout>
         <PageTitle content="About" />
+        <ReactMarkdown source={content} escapeHtml={false}/>
       </ContentLayout>
     </>
   )
 }
 
-export default about
+export default About
+
+export const getStaticProps: GetStaticProps = async () => {
+  const { about = {} } = await graphcms.request(`
+    {
+      about(where: {id: "ckeqoslc014zd0130s3u5dddc"}) {
+       content
+      }
+    }
+  `)
+
+  return { props: { about } }
+}
+

@@ -2,7 +2,8 @@ import Head from "next/head";
 import PageTitle from "components/PageTitle";
 import ContentLayout from "components/ContentLayout";
 
-const contacts = () => {
+const Contacts = () => {
+  
   return (
     <>
       <Head>
@@ -16,4 +17,4 @@ const contacts = () => {
   )
 }
 
-export default contacts
+export default Contacts
