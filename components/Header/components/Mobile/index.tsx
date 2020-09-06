@@ -25,9 +25,10 @@ const Mobile = ({ isDarkBg }: Props) => {
         'h-20',
         'flex',
         'flex-row',
+        'flex-baseline'
       ])}
     >
-      <button className="ml-auto mr-8" onClick={toggleNav}>
+      <button className="self-center ml-auto mr-8" onClick={toggleNav}>
         <svg
           className={cn([strokeColor])}
           width="23"
