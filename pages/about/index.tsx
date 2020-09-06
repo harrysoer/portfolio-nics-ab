@@ -24,7 +24,7 @@ const About = ({ about }) => {
             initial="hidden"
             animate="show"
             variants={contentVariants}
-            className="mt-5 lg:mt-10 lg:ml-10 lg:max-w-lg"
+            className="mt-5 font-serif lg:mt-10 lg:ml-10 lg:max-w-lg"
           >
             <ReactMarkdown source={content} escapeHtml={false} />
           </motion.div>

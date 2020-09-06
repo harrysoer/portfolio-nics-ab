@@ -19,7 +19,7 @@ module.exports = {
       fontFamily: {
         body: ["Montserrat"],
         sans: ["Montserrat"],
-        serif: ["PlayFairDisplay"],
+        serif: ["Domine"],
       },
       transitionDuration: {
         800: "800ms",

@@ -16,15 +16,15 @@
 
 
 @font-face {
-  font-family: "PlayFairDisplay";
+  font-family: "Domine";
   font-weight: 400;
-  src: url("../public/fonts/PlayfairDisplay-Regular.ttf");
+  src: url("../public/fonts/Domine-Regular.ttf");
 }
 
 @font-face {
-  font-family: "PlayFairDisplay";
+  font-family: "Domine";
   font-weight: 900;
-  src: url("../public/fonts/PlayfairDisplay-Black.ttf");
+  src: url("../public/fonts/Domine-Bold.ttf");
 }
 
 html,
