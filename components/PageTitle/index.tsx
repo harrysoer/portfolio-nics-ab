@@ -19,7 +19,6 @@ const PageTitle = ({ content }: Props) => {
 
 export default PageTitle
 
-
 const titleVariants = {
   hidden: {
     x: -15,

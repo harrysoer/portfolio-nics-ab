@@ -1,10 +1,11 @@
-import React from 'react'
+import React from "react";
+import cn from "classnames";
 
-const ContentLayout = ({ children }) => {
+const ContentLayout = ({ className = '', children }) => {
   return (
-    <div className="px-5 md:px-8 lg:px-56">
+    <div className={cn(["px-5 md:px-8 lg:px-56", className])}>
       {children}
-    </div>
+    </div >
   )
 }
 
