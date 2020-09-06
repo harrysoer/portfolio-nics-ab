@@ -13,7 +13,7 @@ const home = ({ isDarkBg }: Props) => {
       initial="hiddent"
       animate="show"
       variants={containerVariants}
-      className="flex flex-col mt-auto mb-70 px-5 md:px-8 lg:px-32"
+      className="flex flex-col mt-auto mb-64 px-5 md:px-8 lg:px-32 lg:mb-70"
     >
       <motion.div
         initial="hidden"
