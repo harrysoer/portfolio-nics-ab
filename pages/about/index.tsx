@@ -1,4 +1,5 @@
 import Head from "next/head";
+import PageTitle from "components/PageTitle";
 
 const about = () => {
 
@@ -8,8 +9,8 @@ const about = () => {
         <title>Nics - About</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div>
-        <h1>About</h1>
+      <div className="lg:px-56">
+        <PageTitle content="About" />
       </div>
     </>
   )

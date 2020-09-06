@@ -1,4 +1,5 @@
 import Head from "next/head";
+import PageTitle from "components/PageTitle";
 
 const works = () => {
   return (
@@ -7,8 +8,8 @@ const works = () => {
         <title>Nics - Works</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div >
-        <h1>Works</h1>
+      <div>
+        <PageTitle content="Works" />
       </div>
     </>
   )

@@ -1,4 +1,5 @@
 import Head from "next/head";
+import PageTitle from "components/PageTitle";
 
 const contacts = () => {
   return (
@@ -8,7 +9,7 @@ const contacts = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div>
-        <h1>Contacts</h1>
+        <PageTitle content="Contacts" />
       </div>
     </>
   )
