@@ -1,8 +1,16 @@
+import Head from "next/head";
+
 const contacts = () => {
   return (
-    <div>
-      <h1>Contacts</h1>
-    </div>
+    <>
+      <Head>
+        <title>Nics - Contacts</title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+      <div>
+        <h1>Contacts</h1>
+      </div>
+    </>
   )
 }
 

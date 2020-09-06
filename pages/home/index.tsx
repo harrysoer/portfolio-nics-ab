@@ -1,3 +1,4 @@
+import Head from "next/head";
 import { motion } from "framer-motion";
 import cn from "classnames";
 
@@ -9,49 +10,55 @@ const home = ({ isDarkBg }: Props) => {
   const rulerBgColor = isDarkBg ? "bg-white" : "bg-black"
 
   return (
-    <motion.div
-      initial="hiddent"
-      animate="show"
-      variants={containerVariants}
-      className="flex flex-col mt-auto mb-64 px-5 md:px-8 lg:px-32 lg:mb-70"
-    >
+    <>
+      <Head>
+        <title>Nics</title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <motion.div
-        initial="hidden"
+        initial="hiddent"
         animate="show"
-        variants={nameVariants}
-        className="self-start flex flex-wrap font-serif text-5xl leading-none md:text-7xl lg:text-8xl"
+        variants={containerVariants}
+        className="flex flex-col mt-auto mb-64 px-5 md:px-8 lg:px-32 lg:mb-70"
       >
-        <motion.span
+        <motion.div
           initial="hidden"
           animate="show"
-          className="mr-5"
-          variants={firstNameVariants}
+          variants={nameVariants}
+          className="self-start flex flex-wrap font-serif font-bold text-5xl leading-none md:text-7xl lg:text-8xl"
         >
-          Nicole
+          <motion.span
+            initial="hidden"
+            animate="show"
+            className="mr-5"
+            variants={firstNameVariants}
+          >
+            Nicole
         </motion.span>{' '}
-        <motion.span
+          <motion.span
+            initial="hidden"
+            animate="show"
+            variants={lastNameVariants}
+          >
+            Balaaldia
+        </motion.span>
+        </motion.div>
+        <motion.div
           initial="hidden"
           animate="show"
-          variants={lastNameVariants}
+          variants={dividerVariants}
+          className={cn(["h-1", "my-2", rulerBgColor, 'bg-gray-400'])}
+        />
+        <motion.div
+          initial="hidden"
+          animate="show"
+          variants={titleVariants}
+          className="flex flex-wrap  text-2xl leading-tight md:text-4xl lg:text-4xl"
         >
-          Balaaldia
-        </motion.span>
+          Architectural Designer
       </motion.div>
-      <motion.div
-        initial="hidden"
-        animate="show"
-        variants={dividerVariants}
-        className={cn(["h-1", "my-2", rulerBgColor, 'bg-gray-400'])}
-      />
-      <motion.div
-        initial="hidden"
-        animate="show"
-        variants={titleVariants}
-        className="flex flex-wrap  text-2xl leading-tight md:text-4xl lg:text-4xl"
-      >
-        Architectural Designer
       </motion.div>
-    </motion.div>
+    </>
   )
 }
 
