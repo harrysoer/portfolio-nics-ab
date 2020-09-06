@@ -10,7 +10,7 @@ const contacts = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <ContentLayout>
-        <PageTitle content="Contacts" />
+        <PageTitle content="Contact" />
       </ContentLayout>
     </>
   )
