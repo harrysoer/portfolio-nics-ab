@@ -10,7 +10,7 @@ const PageTitle = ({ content }: Props) => {
       initial="hidden"
       animate="show"
       variants={titleVariants}
-      className="capitalize leading-tight lg:text-6xl"
+      className="capitalize leading-tight text-4xl md:text-5xl lg:text-6xl"
     >
       {content}
     </motion.div>

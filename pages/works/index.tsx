@@ -1,5 +1,6 @@
 import Head from "next/head";
 import PageTitle from "components/PageTitle";
+import ContentLayout from "components/ContentLayout";
 
 const works = () => {
   return (
@@ -8,9 +9,9 @@ const works = () => {
         <title>Nics - Works</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div>
+      <ContentLayout>
         <PageTitle content="Works" />
-      </div>
+      </ContentLayout>
     </>
   )
 }

@@ -1,5 +1,6 @@
 import Head from "next/head";
 import PageTitle from "components/PageTitle";
+import ContentLayout from "components/ContentLayout";
 
 const about = () => {
 
@@ -9,9 +10,9 @@ const about = () => {
         <title>Nics - About</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="lg:px-56">
+      <ContentLayout>
         <PageTitle content="About" />
-      </div>
+      </ContentLayout>
     </>
   )
 }
