@@ -16,9 +16,7 @@ const home = ({ isDarkBg }: Props) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <motion.div
-        initial="hiddent"
-        animate="show"
-        variants={containerVariants}
+        transition={{ staggerChildren: 2 }}
         className="flex flex-col mt-auto mb-64 px-5 md:px-8 lg:px-32 lg:mb-70"
       >
         <motion.div
@@ -65,15 +63,6 @@ const home = ({ isDarkBg }: Props) => {
 export default home
 
 /* ===/ Variants /=== */
-const containerVariants = {
-  hidden: {},
-  show: {
-    transition: {
-      staggerChildren: 3
-    }
-  }
-}
-
 const nameVariants = {
   hidden: {
     opacity: 0,

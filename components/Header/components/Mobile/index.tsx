@@ -116,7 +116,6 @@ const navListVariants = {
     transition: {
       duration: 0.3,
       staggerChildren: 0.07,
-      // delayChildren: 0.2
     }
   },
   open: {
