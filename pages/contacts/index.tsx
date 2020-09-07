@@ -12,21 +12,11 @@ type Props = {
 }
 
 const Contacts = ({ contacts }: Props) => {
-  console.log({ contacts })
-
   const renderContacts = (contactInfo: ContactType) => {
     let contact = { icon: '', display: <></> }
 
     switch (contactInfo.type) {
       case "MOBILE_NUMBER":
-        // const copyToClipboard = () => {
-        //   let node = document.createElement('span')
-        //   node.textContent = contactInfo.content
-        //   // node.style.scale = '0'
-
-
-        // }
-
         contact.icon = '/icons/phone-dark.svg'
         contact.display = (<>{contactInfo.content}</>)
         break;
