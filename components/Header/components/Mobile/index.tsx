@@ -7,10 +7,15 @@ type Props = {
   isDarkBg: boolean
 }
 
+
 const Mobile = ({ isDarkBg }: Props) => {
   const [isOpen, toggleOpen] = useCycle(false, true);
 
-  const toggleNav = () => toggleOpen();
+  const toggleNav = () => {
+    const bodyNode = document.getElementsByTagName("body")
+    bodyNode[0].style.overflow = !isOpen ? "hidden" : "auto"
+    toggleOpen()
+  };
 
   const textColor = isDarkBg ? 'text-white' : 'text-black';
   const strokeColor = isDarkBg ? 'stroke-white' : 'stroke-black';
