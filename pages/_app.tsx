@@ -26,10 +26,7 @@ const MyApp = ({ Component, pageProps }) => {
           textColor
         ])}
       >
-        {router.pathname !== '/'
-          ? <Header isDarkBg={isDarkBg} />
-          : null
-        }
+        <Header isDarkBg={isDarkBg} />
         <Component {...pageProps} isDarkBg={isDarkBg} />
       </div >
     </ApolloProvider>
